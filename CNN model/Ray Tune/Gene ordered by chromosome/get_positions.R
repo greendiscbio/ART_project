@@ -1,6 +1,3 @@
-#! /usr/bin/Rscript
-
-#setwd('/home/laura/Desktop')
 if (!require("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
