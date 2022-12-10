@@ -4,13 +4,13 @@ import numpy as np
 num_genes = input('Number of genes for the matrix: ')
 num_nodes = input('Number of nodes for the GNN: ')
 
-path ='GNN model\Data\PPT-Ohmnet/Graph_PPT_Ohmn/AD_SNAP_PPI_kidney_'+str(num_genes)+'_genes_'+str(num_nodes)+'_nodes.edgelist'
+path ='GNN model\Data\PPT-Ohmnet/Graph_PPT_Ohmn/Second big pool/AD_SNAP_PPI_kidney_'+str(num_genes)+'_genes_'+str(num_nodes)+'_nodes.edgelist'
 data = pd.read_csv(path, delimiter=' ')
 data = data[[data.columns[0], data.columns[1]]]
 data = data.append(pd.Series([data.columns[0], data.columns[1]], index=[data.columns[0], data.columns[1]]), ignore_index=True)
 print(data)
 # print(data)
-data.to_csv('GNN model/Data/PPT-Ohmnet/mRCC_big_pool/network_edges_mrcc_'+str(num_genes)+'_genes_'+str(num_nodes)+'_nodes.tsv', sep="\t")
+data.to_csv('GNN model/Data/PPT-Ohmnet/mRCC_big_pool/Second big pool/network_edges_mrcc_'+str(num_genes)+'_genes_'+str(num_nodes)+'_nodes.tsv', sep="\t")
 
 path ='Data_preprocessing/Prediction PFS/RNA+Clinic joined/New/Clinical_data_and_RNA_total_Features_PFS.csv'
 rna = pd.read_csv(path)
@@ -39,4 +39,4 @@ final_genes['Y']=Y
 print(final_genes.head())
 print('Genes not present in RNA Matrix: ' + str(len(not_in)))
 print(not_in)
-final_genes.to_csv('GNN model\Data/PPT-Ohmnet/mRCC_big_pool/mrcc_protein_matrix_'+str(num_genes)+'_genes_'+str(num_nodes)+'_nodes.csv')
+final_genes.to_csv('GNN model\Data/PPT-Ohmnet/mRCC_big_pool/Second big pool/mrcc_protein_matrix_'+str(num_genes)+'_genes_'+str(num_nodes)+'_nodes.csv')
