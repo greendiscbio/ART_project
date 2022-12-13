@@ -22,7 +22,7 @@ def get_snap(genes_file):
     # Genes in PPT-Ohmnet are Entrez IDs, it is necessary to convert them to gene Symbols.
     mg = mygene.MyGeneInfo()
     out = mg.querymany(genes, scopes='symbol', fields='entrezgene', species='human')
-    print(out)
+    print(len(out))
     entrezgenes = []
     no_entrezgenes = []
     mapping = {}
@@ -33,11 +33,13 @@ def get_snap(genes_file):
             mapping[int(o['entrezgene'])] = o['query']
         else:
             no_entrezgenes.append(o['query'])
-    print('Genes without entrezgene: ' + str(len(no_entrezgenes)))
+    print('Genes without entrezgene or not in rna list: ' + str(len(no_entrezgenes)))
+    print('Included: '+ str(len(entrezgenes)))
     A_kidney_frozen = G_kidney.subgraph(entrezgenes)
+    print(A_kidney_frozen.number_of_nodes())
     A_kidney = nx.Graph(A_kidney_frozen)
     original = A_kidney.number_of_nodes()
-
+    print(original)
     # Delete nodes from components with less than 5 nodes
     nodes_to_remove = []
     for component in list(nx.connected_components(A_kidney)):

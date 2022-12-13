@@ -251,7 +251,6 @@ LRRK2 SNCA {'tissue': 'kidney'}
 LRRK2 HSP90AA1 {'tissue': 'kidney'}
 LRRK2 VIM {'tissue': 'kidney'}
 LRRK2 RAB5A {'tissue': 'kidney'}
-LRRK2 AGO2 {'tissue': 'kidney'}
 LRRK2 ACTA2 {'tissue': 'kidney'}
 LRRK2 GNAI2 {'tissue': 'kidney'}
 LRRK2 ACTG1 {'tissue': 'kidney'}
@@ -447,7 +446,6 @@ MCL1 BECN1 {'tissue': 'kidney'}
 MCL1 TP53 {'tissue': 'kidney'}
 MCL1 CDK1 {'tissue': 'kidney'}
 MCL1 CASP3 {'tissue': 'kidney'}
-MCL1 AGO2 {'tissue': 'kidney'}
 MCL1 GSK3A {'tissue': 'kidney'}
 MCL1 TRAF6 {'tissue': 'kidney'}
 MCL1 BIK {'tissue': 'kidney'}
@@ -698,7 +696,6 @@ EZH2 TP53 {'tissue': 'kidney'}
 EZH2 RARA {'tissue': 'kidney'}
 EZH2 HSPB1 {'tissue': 'kidney'}
 EZH2 AR {'tissue': 'kidney'}
-EZH2 AGO2 {'tissue': 'kidney'}
 EZH2 DNMT3B {'tissue': 'kidney'}
 EZH2 CUL1 {'tissue': 'kidney'}
 EZH2 HSPA1A {'tissue': 'kidney'}
@@ -1913,7 +1910,6 @@ CUL1 NFKB2 {'tissue': 'kidney'}
 CUL1 TP73 {'tissue': 'kidney'}
 CUL1 HSPA1B {'tissue': 'kidney'}
 CUL1 ILK {'tissue': 'kidney'}
-CUL1 AGO2 {'tissue': 'kidney'}
 CUL1 BTG2 {'tissue': 'kidney'}
 CUL1 ENO1 {'tissue': 'kidney'}
 CUL1 HNRNPA1 {'tissue': 'kidney'}
@@ -3175,7 +3171,6 @@ TP63 SUMO1 {'tissue': 'kidney'}
 TP63 TP53BP2 {'tissue': 'kidney'}
 TP63 ATM {'tissue': 'kidney'}
 TP63 TP73 {'tissue': 'kidney'}
-TP63 AGO2 {'tissue': 'kidney'}
 TP63 CDKN2A {'tissue': 'kidney'}
 TP63 PML {'tissue': 'kidney'}
 TP63 SATB2 {'tissue': 'kidney'}
@@ -3221,7 +3216,6 @@ TBK1 IKBKB {'tissue': 'kidney'}
 TBK1 NFKB2 {'tissue': 'kidney'}
 TBK1 EGFR {'tissue': 'kidney'}
 TBK1 NFKB1 {'tissue': 'kidney'}
-TBK1 AGO2 {'tissue': 'kidney'}
 TBK1 HSPA1A {'tissue': 'kidney'}
 TBK1 HSP90AA1 {'tissue': 'kidney'}
 TBK1 LETM1 {'tissue': 'kidney'}
@@ -3898,7 +3892,6 @@ CAND1 HSPA1A {'tissue': 'kidney'}
 CAND1 SRPK1 {'tissue': 'kidney'}
 CAND1 CLN3 {'tissue': 'kidney'}
 CAND1 NUP62 {'tissue': 'kidney'}
-CAND1 AGO2 {'tissue': 'kidney'}
 CAND1 SCARB1 {'tissue': 'kidney'}
 CAND1 CIRBP {'tissue': 'kidney'}
 CAND1 HSPA9 {'tissue': 'kidney'}
@@ -3922,20 +3915,6 @@ CAND1 NCL {'tissue': 'kidney'}
 CAND1 HSPD1 {'tissue': 'kidney'}
 CAND1 PLOD1 {'tissue': 'kidney'}
 CAND1 COPS5 {'tissue': 'kidney'}
-AGO2 TP73 {'tissue': 'kidney'}
-AGO2 COPS5 {'tissue': 'kidney'}
-AGO2 HSP90AA1 {'tissue': 'kidney'}
-AGO2 TP53 {'tissue': 'kidney'}
-AGO2 EIF4EBP1 {'tissue': 'kidney'}
-AGO2 BMI1 {'tissue': 'kidney'}
-AGO2 EGFR {'tissue': 'kidney'}
-AGO2 DICER1 {'tissue': 'kidney'}
-AGO2 LIG4 {'tissue': 'kidney'}
-AGO2 MTA2 {'tissue': 'kidney'}
-AGO2 HSPA9 {'tissue': 'kidney'}
-AGO2 HSPD1 {'tissue': 'kidney'}
-AGO2 PRKAR1A {'tissue': 'kidney'}
-AGO2 XPO1 {'tissue': 'kidney'}
 WWOX TP53 {'tissue': 'kidney'}
 WWOX RARA {'tissue': 'kidney'}
 WWOX HSPB1 {'tissue': 'kidney'}
