@@ -10,7 +10,7 @@ print(data)
 # print(data)
 data.to_csv('GNN model/Data/PPT-Ohmnet/mRCC_big_pool/Second big pool/network_edges_mrcc_total_RNA_nodes.tsv', sep="\t")
 
-path ='Data_preprocessing/Prediction PFS/RNA+Clinic joined/New/t/Clinical_data_and_RNA_total_Features_PFS.csv'
+path ='Data_preprocessing/Prediction PFS/RNA+Clinic joined/New/Clinical_data_and_RNA_total_Features_PFS.csv'
 rna = pd.read_csv(path)
 Y = [] # Target column
 # For each entry I classified it by its PFS value.

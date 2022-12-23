@@ -9,7 +9,7 @@ def get_snap(genes_file):
     tissues_edgelist = pd.read_csv('GNN model/Data/PPT-Ohmnet/Graph_PPT_Ohmn/PPT-Ohmnet_tissues-combined.edgelist', sep='\t')
     kidney_specific = tissues_edgelist[tissues_edgelist['tissue'] == 'kidney']
 
-    kidney_specific.to_csv('GNN model/Data/PPT-Ohmnet/Graph_PPT_Ohmn/Second big pool/PPT-Ohmnet_tissues-kidney.edgelist', sep='\t', index=False)
+    # kidney_specific.to_csv('GNN model/Data/PPT-Ohmnet/Graph_PPT_Ohmn/Second big pool/PPT-Ohmnet_tissues-kidney.edgelist', sep='\t', index=False)
     G_kidney = nx.read_edgelist('GNN model/Data/PPT-Ohmnet/Graph_PPT_Ohmn/Second big pool/PPT-Ohmnet_tissues-kidney.edgelist', nodetype=int, data=(('tissue', str),))
     rna_genes = np.loadtxt('GNN model/Data/all_genes_db.txt', dtype=str,  delimiter=',', skiprows=0)
 
@@ -58,7 +58,7 @@ def get_snap(genes_file):
     print('Biggest connected component:', largest, 'nodes')
     print('Percentage of lost genes/nodes:', lost, f'({lost_percent*100}%)')
     A_kidney_relabeled = nx.relabel_nodes(A_kidney, mapping)
-    nx.write_edgelist(A_kidney_relabeled, 'GNN model/Data/PPT-Ohmnet/Graph_PPT_Ohmn/Second big pool/AD_SNAP_PPI_kidney_'+str(len(genes)-1)+'_genes_'+str(largest)+'_nodes.edgelist')
+    # nx.write_edgelist(A_kidney_relabeled, 'GNN model/Data/PPT-Ohmnet/Graph_PPT_Ohmn/Second big pool/AD_SNAP_PPI_kidney_'+str(len(genes)-1)+'_genes_'+str(largest)+'_nodes.edgelist')
     print(A_kidney_relabeled)
     return A_kidney_relabeled
 
@@ -73,5 +73,5 @@ data = data[data['Score_gda'] > float(gdas)]
 genes = data.Gene
 genes = genes.unique()
 print(len(genes))
-np.savetxt('GNN model/Data/PPT-Ohmnet/mRCC_big_pool/Second big pool/mrcc_gene_list_('+str(len(genes))+'_genes).txt', genes, delimiter=',', fmt='%s') 
+# np.savetxt('GNN model/Data/PPT-Ohmnet/mRCC_big_pool/Second big pool/mrcc_gene_list_('+str(len(genes))+'_genes).txt', genes, delimiter=',', fmt='%s') 
 get_snap('GNN model/Data/PPT-Ohmnet/mRCC_big_pool/Second big pool/mrcc_gene_list_('+str(len(genes))+'_genes).txt')
