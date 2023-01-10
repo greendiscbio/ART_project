@@ -3,9 +3,11 @@ import matplotlib.pyplot as plt
 a = []
 b = []
 c = []
+all =[]
 f = open("Current research\Informatics paper\RNA_pfs.txt", "r")
 for linea in f:
     l = float(linea[:-8])
+    all.append(l)
     if l<3:
         a.append(l)
     elif l<6:
@@ -15,8 +17,8 @@ for linea in f:
 f.close()
 print(a)
 
-inter = np.arange(63)
-plt.hist(x = [a,b,c], bins=inter,
+plt.hist(x = [a,b,c], bins=7,
+
 color=['Blue', 'Green', 'Orange'], label=['Patients whose PFS is lower than 3 months', 'Patients whose PFS is between 3 and 6 months', 'Patients whose PFS is over 6 months'])
 plt.title('RNA data set: '+ str(len(a)+len(b)+len(c)))
 plt.xlabel('PFS value (months)')
@@ -24,5 +26,12 @@ plt.ylabel('Patients')
 plt.legend()
 plt.show()
 # print('Mediana de los datos PFS (Pacientes Clinico): '+ str(statistics.median(data4)))
-print(len(a)/(len(a)+len(b)+len(c)))
-print((len(b)+len(c))/(len(a)+len(b)+len(c)))
+print('Percentage of class 0: '+str(len(a)/(len(a)+len(b)+len(c))))
+print('Percentage of class 1: '+str(len(b)/(len(a)+len(b)+len(c))))
+print('Percentage of class 2: '+str(len(c)/(len(a)+len(b)+len(c))))
+print('Percentage of class 1 and 2: '+str((len(b)+len(c))/(len(a)+len(b)+len(c))))
+
+print('Patients of class 0: '+str(len(a)))
+print('Patients of class 1: '+str(len(b)))
+print('Patients of class 2: '+str(len(c)))
+print(np.mean(all))

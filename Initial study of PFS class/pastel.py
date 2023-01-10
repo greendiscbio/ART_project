@@ -60,7 +60,7 @@ names = ["PFS > 3", "PFS < 3"]
 
 fig, ((ax1, ax4), (ax3, ax2)) = plt.subplots(2, 2)
 fig.suptitle('Proporción PFS en meses de las distintas tablas')
-ax1.pie(result, labels=names, autopct="%0.1f %%")
+ax1.pie(result, labels=names, autopct="%0.1f %%", colors= ['crimson', 'dodgerblue'])
 ax2.pie(result2, labels=names, autopct="%0.1f %%")
 ax3.pie(result3, labels=names, autopct="%0.1f %%")
 ax4.pie(result4, labels=names, autopct="%0.1f %%")
