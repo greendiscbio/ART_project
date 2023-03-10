@@ -1,4 +1,4 @@
-############### GIVEN INITIAL EXCEL WITH PLENTY SHEETS ############################################
+############### GIVEN INITIAL EXCEL WITH PLENTY SHEETS ###############
 import pandas as pd
 
 # Unpack sheets from excel file

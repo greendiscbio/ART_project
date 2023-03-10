@@ -19,8 +19,8 @@ print(a)
 
 plt.hist(x = [a,b,c], bins=7,
 
-color=['Blue', 'Green', 'Orange'], label=['Patients whose PFS is lower than 3 months', 'Patients whose PFS is between 3 and 6 months', 'Patients whose PFS is over 6 months'])
-plt.title('RNA data set: '+ str(len(a)+len(b)+len(c)))
+color=['Blue', 'Green', 'Orange'], label=['Patients whose PFS is lower than 3 months (NR)', 'Patients whose PFS is between 3 and 6 months (IR)', 'Patients whose PFS is over 6 months (R)'])
+plt.title('RNA data: '+ str(len(a)+len(b)+len(c))+ ' patients')
 plt.xlabel('PFS value (months)')
 plt.ylabel('Patients')
 plt.legend()

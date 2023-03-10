@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import f_classif
 import scipy.stats as stats
@@ -6,18 +7,34 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from bioinfokit.analys import stat
 import scipy.stats as stats
-import scanpy as sc
-import numpy as np
-def import_data (path):
+from sklearn.feature_selection import VarianceThreshold
+from sklearn.feature_selection import SelectFromModel
+from sklearn.ensemble import ExtraTreesClassifier
+def import_data(path):
     # load data file
     df = pd.read_csv(path)
-    y = df['Y']
-    df = df.iloc[:,1:17826]
+    if 'Y' in df.columns:
+        y = df['Y']
+        df = df.iloc[:,1:17826]
+    elif 'PFS' in df.columns:
+        y = []
+        for patient in range (len(df)):
+            if df['PFS'][patient] < 3:
+                y.append(0)
+            else:
+                y.append(1)
+        df = df.iloc[:,122:44015]
+    else:
+        print('Target column has not been found.')
+
     print(df)
     return df, y
 
+
 def anova_study(df, y, n_features):
     X = df
+    # print(X)
+    # print(y)
     if n_features != "all":
         fvalue_Best = SelectKBest(f_classif, k=int(n_features))
         X_kbest = fvalue_Best.fit_transform(X, y)
@@ -33,6 +50,7 @@ def anova_study(df, y, n_features):
         print("P-value: " +str(pvalue))
 
         X_kbest = pd.DataFrame(X_kbest, columns=cols)
+        included = compare_dataframe_with_biogris_genes(X_kbest)
 
         # # reshape the d dataframe suitable for statsmodels package 
         df_melt = pd.melt(X_kbest.reset_index(), id_vars=['index'], value_vars=X_kbest.columns.values)
@@ -53,14 +71,14 @@ def anova_study(df, y, n_features):
             print(res.anova_summary)
         else:
             print("The number of feature selected is to big to be shown in the sumary")
-
+        return included
     else:
         n = df.shape[0]   # 181 patients
         k = df.shape[1]   # 17826 genes
 
         # 1. Calculate the mean for allgenes:
         df.loc['Group Means'] = df.mean()
-        print(df)
+        # print(df)
 
         overall_mean = df.iloc[-1].mean()
         print("Overall mean: " + str(overall_mean))
@@ -95,30 +113,83 @@ def anova_study(df, y, n_features):
         )
         print("F-vlaue: " +str(fvalue))
         print("P-value: " +str(pvalue))
-        
-def higly_variable_genes(path):
-    adata = sc.read(path)
-    print(adata)
-    sc.pp.scale(adata)
-    sc.pp.pca(adata)
-    sc.pp.neighbors(adata)
-    sc.tl.umap(adata)
-    # sc.pl.umap(adata, color=["samples", "n_genes", "mt_frac", "doublet_score"], ncols=2)
 
-    sc.pp.highly_variable_genes(adata, min_mean=0.01, max_mean=8, min_disp=1, n_top_genes=4000, flavor="cell_ranger", n_bins=20)
-    sc.pl.highly_variable_genes(adata)
-    print("Highly variable genes: ", np.sum(adata.var["highly_variable"]))
-    print("Total genes:", adata.shape[1])
-    sc.pp.pca(adata)
-    sc.pp.neighbors(adata)
-    sc.tl.umap(adata)
-    sc.tl.leiden(adata)
+def variance_threshold_study(data, threshold):
+    sel = VarianceThreshold(threshold=(threshold * (1 - threshold)))
+    result = sel.fit_transform(data)
+    cols = sel.get_feature_names_out(data.columns.values)
+    result = pd.DataFrame(result, columns=cols)
+    # print(result)
+    included = compare_dataframe_with_biogris_genes(result)
+    return included
+
+def tree_based_study(data, y, min_importance):
+    clf = ExtraTreesClassifier(n_estimators=100)
+    clf = clf.fit(data, y)
+    importances = clf.feature_importances_
+    elems_over_0 = np.fromiter((element for element in importances if element > min_importance), dtype = importances.dtype)
+    # print('Features with relevance over 0: ', len(elems_over_0))
+    model = SelectFromModel(clf, prefit=True)
+    X_new = model.transform(data)
+    # print(X_new.shape)
+    cols = []
+    for name, importance in zip(data, clf.feature_importances_):
+        if importance > min_importance:
+            cols.append(name)
+    result = pd.DataFrame(X_new, columns=cols)
+    included = compare_dataframe_with_biogris_genes(result)
+    return included
+
+def compare_dataframe_with_biogris_genes(df):
+    path = "2023 Work/Graph networks/Biogrid/Data/genes_found.txt"
+    infile = open(path, "r")
+    rna_genes = infile.read().split("\n")
+    infile.close()
+
+    included = 0
+    not_included = []
+    for d in df:
+        if d in rna_genes:
+            included = included +1
+            with open('2023 Work\Graph networks\Biogrid\Data\ANOVA\Anova_selected_'+str(n_features)+'_genes.txt',"a") as file2:
+                file2.write(str(d) + "\n")
+        else:
+            not_included.append(d)
+    return included
 ###################################### MAIN ########################################
 
-path = "2023 Work/Data/Preprocessed_data/Gene Matrix/biogrid_included_genes_NIVOLUMAB.csv"
+# path = "2023 Work/Data/Preprocessed_data/Gene Matrix/biogrid_included_genes_NIVOLUMAB.csv"
+path = "2023 Work/Data/Preprocessed_data/clinic_and_RNA_data_raw_NIVOLUMAB.csv"
 data, y = import_data(path)
-# n_features = input("How many features do you want to select? (number/all) Maximum nmber of featues is: "+str(len(data.columns))+" ")
-# anova_study(data, y, n_features)
-higly_variable_genes(path)
+print(data.columns)
+n_features = input("How many features do you want to select? (number/all) Maximum number of featues fo select: "+str(len(data.columns))+" ")
+included = anova_study(data, y, n_features)
+print('ANOVA: '+str(included))
+# threshold = input("Remove features bellow: (0.0-1.0) ")
+# included = variance_threshold_study(data, float(threshold))
+# print("Variance threshold: "+str(included))
+# included = tree_based_study(data, y, 0)
+# print("Tree-based: "+str(included))
 
 #####################################################################################
+
+# Compare with RNA_total data
+# path = "2023 Work\Data\Preprocessed_data\Feature selection\RNA_total.txt"
+# path = "2023 Work/Graph networks/Biogrid/Data/genes_found.txt"
+# infile = open(path, "r")
+# rna_genes = infile.read().split("\n")
+# infile.close()
+# path = "2023 Work/Graph networks/Spectral_clustering+CNN/Feature selection/hvgs.txt"
+# infile = open(path, "r")
+# hvgs_genes = infile.read().split("\n")
+# infile.close()
+# included = 0
+# not_included = []
+# for k in hvgs_genes:
+#     if k in rna_genes:
+#         included = included +1
+#     else:
+#         not_included.append(k)
+# print(not_included)
+# print(included)
+# print(len(not_included))
