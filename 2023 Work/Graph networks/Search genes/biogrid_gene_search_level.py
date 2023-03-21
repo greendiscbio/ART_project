@@ -1,3 +1,16 @@
+'''
+This file creates a PPI network with the given depth level (level) of a given list of genes 
+(genes_found.txt.txt) based on the Biogrid database and shows it in the .edgelist file 
+(biogrid_found_genes_level_x.edgelist). It also creates one file with the n genes not known by Biogrid or 
+which have no connection with any other gene (final_not_included_genes_level_x.txt).
+
+As input parameters we need a list of genes to look for in Biogrid and as we found some connection problems 
+during the long execution, we add a file called lef_genes.txt which at first contains the same lines (genes) 
+as genes_found.txt file. When the execution is interrupted due to some problem we update the left_file.txt 
+by deleting the genes which have already been looked for. Even though we delete this genes they are taking 
+into account as probable neighbors since they are included in the genes_found.txt file
+'''
+
 import requests
 import pandas as pd
 import networkx as nx
@@ -91,7 +104,7 @@ def get_biogrid(genes_file, genes_left_file, level):
     infile.close()
     print("Left gene list")
     print(len(genes_left))
-    with open('2023 Work/Graph networks/Biogrid/Data/biogrid_foun_genes_level_'+level+'.edgelist',"a") as file2:
+    with open('2023 Work/Graph networks/Data/biogrid_found_genes_level_'+level+'.edgelist',"a") as file2:
         for g in genes_left:
             print("Initial gene: " + str(g))
             found, branch = create_net(0, int(level), geneList, g, False, g, [])
@@ -109,25 +122,24 @@ def get_biogrid(genes_file, genes_left_file, level):
                     file2.write(str(branch[b])+" "+str(branch[b+1])+"\n")
 
     file2.close()
-    initial_G = nx.read_edgelist('2023 Work/Graph networks/Biogrid/Data/biogrid_found_genes_level_'+level+'.edgelist')  
+    initial_G = nx.read_edgelist('2023 Work/Graph networks/Data/biogrid_found_genes_level_'+level+'.edgelist')  
     G = nx.Graph(initial_G)
-    with open('2023 Work/Graph networks/Biogrid/Data/final_not_included_genes_level_'+str(level)+'.txt',"a") as file3:
+    with open('2023 Work/Graph networks/Data/final_not_included_genes_level_'+str(level)+'.txt',"a") as file3:
         for g in geneList:
             if g not in G.nodes():
                file3.write(str(g)+"\n")
-    file3.close()
 
 level = -1
 while int(level) < 1:
     level = input("How many levels do you want to look for? (level>=1) ")
 
-a = get_biogrid('2023 Work/Graph networks/Biogrid/Data/genes_found.txt', '2023 Work/Graph networks/Biogrid/Data/left_genes.txt', level)
+a = get_biogrid('2023 Work/Graph networks/Data/genes_found.txt', '2023 Work/Graph networks/Data/left_genes.txt', level)
 
 #-----------------------------------------------#
 # Show principal characteristics of the graph   #
 #-----------------------------------------------#
-# initial_G = nx.read_edgelist('2023 Work/Graph networks/Biogrid/Data/biogrid_found_genes_level_2_hvgs.edgelist')  
-# # sub = nx.read_edgelist('2023 Work/Graph networks/Biogrid/Data/biogrid_found_genes_level_2_anova.edgelist')  
+# initial_G = nx.read_edgelist('2023 Work/Graph networks/Data/HVGS/Biogrid/biogrid_found_genes_level_2_hvgs.edgelist')  
+# # sub = nx.read_edgelist('2023 Work/Graph networks/Data/ANOVA/Biogrid/biogrid_found_genes_level_2_anova.edgelist')  
 # G = nx.Graph(initial_G)
 # # sub = nx.Graph(sub)
 # print(G)
@@ -138,10 +150,10 @@ a = get_biogrid('2023 Work/Graph networks/Biogrid/Data/genes_found.txt', '2023 W
 
 
 #--------------------------------------------------------------------------------------------------#
-# Check if any gene were not included in the initial list (genes whose sobreexpression is known)   #
+# Check if any gene were not included in the initial list (genes whose sobreexpression is unknown)   #
 #--------------------------------------------------------------------------------------------------#
 
-# infile = open("2023 Work/Graph networks/Biogrid/Data/genes_found.txt", "r")
+# infile = open("2023 Work/Graph networks/Data/genes_found.txt", "r")
 # geneList = infile.read().split("\n")
 # infile.close()
 # print(len(geneList))
@@ -157,16 +169,16 @@ a = get_biogrid('2023 Work/Graph networks/Biogrid/Data/genes_found.txt', '2023 W
 #-----------------------------------------------------------------------------#
 
 # # Whole gene list
-# infile = open("2023 Work/Graph networks/Biogrid/Data/HVGS/included_genes_hvgs.txt", "r")
+# infile = open("2023 Work/Graph networks/Data/HVGS/Biogrid/included_genes_hvgs.txt", "r")
 # geneList = infile.read().split("\n")
 # infile.close()
 
 # # Achieved edgelist (genes which were connected)
-# initial_G = nx.read_edgelist("2023 Work/Graph networks/Biogrid/Data/biogrid_found_genes_level_2_hvgs.edgelist")
+# initial_G = nx.read_edgelist("2023 Work/Graph networks/Data/HVGS/Biogrid/biogrid_found_genes_level_2_hvgs.edgelist")
 # G = nx.Graph(initial_G)
 
 # # Save not connected genes
-# with open("2023 Work/Graph networks/Biogrid/Data/not_included_genes_2_anova","a") as file3:
+# with open("2023 Work/Graph networks/Data/ANOVA/Biogrid/not_included_genes_2_anova","a") as file3:
 #     for g in geneList:
 #         if g not in G.nodes():
 #             file3.write(str(g)+"\n")
