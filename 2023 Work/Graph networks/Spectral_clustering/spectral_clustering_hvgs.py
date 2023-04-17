@@ -16,7 +16,7 @@ os.chdir("2023 Work/Graph networks/Biogrid")
 # # print("################## Create eigenvalues and eigenvectors from edgelist ##################")
 
 # # Get the graph of the biggest component
-initial_G = nx.read_edgelist("Data/biogrid_found_genes_level_2_hvgs.edgelist")  
+initial_G = nx.read_edgelist("../Data/HVGS/Spectral_clustering/HVGS/Biogrid/biogrid_found_genes_level_2_hvgs.edgelist")  
 G = nx.Graph(initial_G)
 print(G)
 Gcc = sorted(nx.connected_components(G), key=len, reverse=True)
@@ -48,7 +48,7 @@ print()
 # # create data frame with the second and the third minimum eigenvalue
 # df = pd.DataFrame(vecs.T, 
 #                    columns=vals)
-# df.to_csv("Data/biggest_comp_eigenvalues_hvgs.csv")
+# df.to_csv("../Data/HVGS/Spectral_clustering/Data/HVGS/Spectral_clustering/Data/biggest_comp_eigenvalues_hvgs.csv")
 
 
 print("################## Select the representative eigenvalues and eigenvectors ##################")
@@ -79,7 +79,7 @@ df2.iloc[:,0] = df2.iloc[:,0]+abs(df2.iloc[:,0].min())
 for i in range(len(df2)):
   plt.plot(df2.iloc[:,1][i], df2.iloc[:,0][i], marker="x",  markersize=7, color="green")
 #plt.show()
-plt.savefig("images/2d_representation_positive_area_hvgs.png", format = 'png')
+plt.savefig("../Data/HVGS/Spectral_clustering/images/2d_representation_positive_area_hvgs.png", format = 'png')
 plt.cla()
 
 
@@ -114,7 +114,7 @@ for i in df2.index:
   plt.plot(df2.iloc[:,1][i], df2.iloc[:,0][i], marker="x",  markersize=7, color="green")
 #plt.show()
 
-plt.savefig("images/2d_representation_positive_area_reduced_hvgs.png", format = 'png')
+plt.savefig("../Data/HVGS/Spectral_clustering/images/2d_representation_positive_area_reduced_hvgs.png", format = 'png')
 plt.cla()
 
 df2 = df2*10000
@@ -138,8 +138,8 @@ print('Minimum value of the second eigenvalue: ' + str(heat["0.21990747247141856
 
 print(df2)
 print(heat)
-df2.to_csv("matrix_coords_zoom.csv")
-heat.to_csv("heat_coords_distribution_zoom.csv")
+df2.to_csv("../Data/HVGS/Spectral_clustering/Data/matrix_coords_zoom.csv")
+heat.to_csv("../Data/HVGS/Spectral_clustering/Data/heat_coords_distribution_zoom.csv")
 
 heats = np.ones((df2.iloc[:,1].max()+1, df2.iloc[:,0].max()+1))
 heats[heat[df2.columns[1]], heat[df2.columns[0]]] = heat["records"]
@@ -148,7 +148,7 @@ print(heats.shape)
 # import seaborn as sns
 # sns.heatmap(heats, cmap ="coolwarm")
 # #plt.show()
-# plt.savefig("images/heat_map.png", format = 'png')
+# plt.savefig("../Data/HVGS/Spectral_clustering/Data/heat_map.png", format = 'png')
 # plt.cla()
 
 path ='../../Data/Preprocessed_data/clinic_and_RNA_data_raw_NIVOLUMAB.csv'
@@ -171,7 +171,7 @@ for patient in range(len(data)): # Recorro pacientes
   scaler.fit(final_matrix)
   final_matrix = scaler.transform(final_matrix)
   final_matrix=pd.DataFrame(final_matrix)
-  final_matrix.to_csv('../../Data/Patients_zoom/final_matrix_'+str(patient)+'.csv')
+  final_matrix.to_csv('Data/Patients_zoom/final_matrix_'+str(patient)+'.csv')
   X.append(final_matrix)
   if data.PFS[patient] < 3:
     Y.append(0)
