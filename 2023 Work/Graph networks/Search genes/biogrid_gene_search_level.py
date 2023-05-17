@@ -5,7 +5,7 @@ This file creates a PPI network with the given depth level (level) of a given li
 which have no connection with any other gene (final_not_included_genes_level_x.txt).
 
 As input parameters we need a list of genes to look for in Biogrid and as we found some connection problems 
-during the long execution, we add a file called lef_genes.txt which at first contains the same lines (genes) 
+during the long execution, we add a file called left_genes.txt which at first contains the same lines (genes) 
 as genes_found.txt file. When the execution is interrupted due to some problem we update the left_file.txt 
 by deleting the genes which have already been looked for. Even though we delete this genes they are taking 
 into account as probable neighbors since they are included in the genes_found.txt file
@@ -150,7 +150,7 @@ a = get_biogrid('2023 Work/Graph networks/Data/genes_found.txt', '2023 Work/Grap
 
 
 #--------------------------------------------------------------------------------------------------#
-# Check if any gene were not included in the initial list (genes whose sobreexpression is unknown)   #
+# Check if any gene were not included in the initial list (genes whose sobreexpression is unknown) #
 #--------------------------------------------------------------------------------------------------#
 
 # infile = open("2023 Work/Graph networks/Data/genes_found.txt", "r")
