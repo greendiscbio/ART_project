@@ -119,7 +119,7 @@ def cv_score(X_train, X_test, y_train, y_test,  e, wl, dim, models_list, scoring
         # Get best hyperparametres for current model
         model = get_best_model(name, X_train , y_train, kf)
                 
-        # Iterate given metrics and perform CV with each
+        # Perform CV
         for train_index, val_index in kf.split(X_train, y_train):
              
             # Create train and validation datasets
@@ -135,7 +135,10 @@ def cv_score(X_train, X_test, y_train, y_test,  e, wl, dim, models_list, scoring
             # print('Patients in train dataset: '+ str(len(train_dataset)))
             # print('Patients in val dataset: '+ str(len(val_dataset)))
 
+            # Fit the model
             model.fit(train_dataset, train_y_dataset)
+
+            # Get validation metrics
             val_pred = model.predict(val_dataset)
 
             val_score['balanced_accuracy_score'].append(balanced_accuracy_score(val_y_dataset, val_pred))
@@ -145,22 +148,21 @@ def cv_score(X_train, X_test, y_train, y_test,  e, wl, dim, models_list, scoring
             val_score['recall_score'].append(recall_score(val_y_dataset, val_pred, average='weighted'))
             val_score['matthews_corrcoef'].append(matthews_corrcoef(val_y_dataset, val_pred))
 
+        # Save validation metrics
         for metric in val_score:
-            # print(val_score[metric])
-            # print(np.mean(val_score[metric]))
             val_mean_score.append(np.mean(val_score[metric]))
             val_std_score.append(np.std(val_score[metric]))
 
 
-        # Save current model train scores
+        # Save current model val scores
         tmp = pd.DataFrame({name: val_mean_score}, index = score_list)
         tmp_std = pd.DataFrame({name: val_std_score}, index = score_list)
 
-        # Add current model train scores to final dataframe (all models and metrics included)
+        # Add current model val scores to final dataframe (all models and metrics included)
         ldf.append(tmp)
         ldf_std.append(tmp_std)
 
-        # Refit model (train+eval) for Test evaluation
+        # Refit model (train+val) for Test evaluation
         model.fit(X_train, y_train)
 
         # Test evaluation
@@ -255,7 +257,7 @@ if __name__ == "__main__":
         for dim in [128,256,512]:
                 for wl in [2,3]:
                     # Caso concreto para probar
-                    e = 500; wl = 3; dim = 512
+                    # e = 500; wl = 3; dim = 512
                     results = upload_data(f'Results_2/RNA_graph2vec_{e}e_{wl}WL_{dim}dim_full.csv', 'Data/RNA_Disgenet_matrix_2_full.csv')
                     x, y = transform_data(results)
                     X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y)
