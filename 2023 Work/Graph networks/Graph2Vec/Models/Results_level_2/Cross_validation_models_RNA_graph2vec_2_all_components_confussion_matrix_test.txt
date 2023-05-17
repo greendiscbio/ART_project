@@ -1,0 +1,792 @@
+RNA_graph2vec_100e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[23  1]
+ [12  1]]
+RNA_graph2vec_100e_2WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_100e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [11  2]]
+RNA_graph2vec_100e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[24  0]
+ [13  0]]
+RNA_graph2vec_100e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[22  2]
+ [13  0]]
+RNA_graph2vec_100e_3WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_100e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [10  3]]
+RNA_graph2vec_100e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[24  0]
+ [13  0]]
+RNA_graph2vec_100e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [10  3]]
+RNA_graph2vec_100e_2WL_256dim_full test confussion matrix for SVC
+[[23  1]
+ [12  1]]
+RNA_graph2vec_100e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [11  2]]
+RNA_graph2vec_100e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_100e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [11  2]]
+RNA_graph2vec_100e_3WL_256dim_full test confussion matrix for SVC
+[[20  4]
+ [11  2]]
+RNA_graph2vec_100e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_100e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 8  5]]
+RNA_graph2vec_100e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[15  9]
+ [11  2]]
+RNA_graph2vec_100e_2WL_512dim_full test confussion matrix for SVC
+[[16  8]
+ [11  2]]
+RNA_graph2vec_100e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[16  8]
+ [10  3]]
+RNA_graph2vec_100e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [10  3]]
+RNA_graph2vec_100e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [12  1]]
+RNA_graph2vec_100e_3WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_100e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [12  1]]
+RNA_graph2vec_100e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [10  3]]
+RNA_graph2vec_200e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 7  6]]
+RNA_graph2vec_200e_2WL_128dim_full test confussion matrix for SVC
+[[23  1]
+ [13  0]]
+RNA_graph2vec_200e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [13  0]]
+RNA_graph2vec_200e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 7  6]]
+RNA_graph2vec_200e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [10  3]]
+RNA_graph2vec_200e_3WL_128dim_full test confussion matrix for SVC
+[[21  3]
+ [12  1]]
+RNA_graph2vec_200e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [11  2]]
+RNA_graph2vec_200e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [10  3]]
+RNA_graph2vec_200e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 8  5]]
+RNA_graph2vec_200e_2WL_256dim_full test confussion matrix for SVC
+[[15  9]
+ [ 7  6]]
+RNA_graph2vec_200e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[18  6]
+ [10  3]]
+RNA_graph2vec_200e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[13 11]
+ [ 6  7]]
+RNA_graph2vec_200e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[17  7]
+ [ 6  7]]
+RNA_graph2vec_200e_3WL_256dim_full test confussion matrix for SVC
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_200e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [10  3]]
+RNA_graph2vec_200e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[13 11]
+ [ 6  7]]
+RNA_graph2vec_200e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_200e_2WL_512dim_full test confussion matrix for SVC
+[[20  4]
+ [12  1]]
+RNA_graph2vec_200e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [12  1]]
+RNA_graph2vec_200e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[18  6]
+ [ 9  4]]
+RNA_graph2vec_200e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_200e_3WL_512dim_full test confussion matrix for SVC
+[[21  3]
+ [10  3]]
+RNA_graph2vec_200e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[18  6]
+ [ 9  4]]
+RNA_graph2vec_200e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [10  3]]
+RNA_graph2vec_300e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_300e_2WL_128dim_full test confussion matrix for SVC
+[[22  2]
+ [11  2]]
+RNA_graph2vec_300e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[17  7]
+ [11  2]]
+RNA_graph2vec_300e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_300e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[16  8]
+ [ 8  5]]
+RNA_graph2vec_300e_3WL_128dim_full test confussion matrix for SVC
+[[15  9]
+ [11  2]]
+RNA_graph2vec_300e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[19  5]
+ [ 7  6]]
+RNA_graph2vec_300e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[13 11]
+ [ 8  5]]
+RNA_graph2vec_300e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 7  6]]
+RNA_graph2vec_300e_2WL_256dim_full test confussion matrix for SVC
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_300e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [11  2]]
+RNA_graph2vec_300e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_300e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[17  7]
+ [10  3]]
+RNA_graph2vec_300e_3WL_256dim_full test confussion matrix for SVC
+[[20  4]
+ [11  2]]
+RNA_graph2vec_300e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [11  2]]
+RNA_graph2vec_300e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[14 10]
+ [ 7  6]]
+RNA_graph2vec_300e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[22  2]
+ [ 9  4]]
+RNA_graph2vec_300e_2WL_512dim_full test confussion matrix for SVC
+[[22  2]
+ [ 8  5]]
+RNA_graph2vec_300e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [11  2]]
+RNA_graph2vec_300e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 6  7]]
+RNA_graph2vec_300e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [10  3]]
+RNA_graph2vec_300e_3WL_512dim_full test confussion matrix for SVC
+[[22  2]
+ [13  0]]
+RNA_graph2vec_300e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [11  2]]
+RNA_graph2vec_300e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_400e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [10  3]]
+RNA_graph2vec_400e_2WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [12  1]]
+RNA_graph2vec_400e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [12  1]]
+RNA_graph2vec_400e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[15  9]
+ [ 9  4]]
+RNA_graph2vec_400e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [ 8  5]]
+RNA_graph2vec_400e_3WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [12  1]]
+RNA_graph2vec_400e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[17  7]
+ [10  3]]
+RNA_graph2vec_400e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[20  4]
+ [ 8  5]]
+RNA_graph2vec_400e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 4  9]]
+RNA_graph2vec_400e_2WL_256dim_full test confussion matrix for SVC
+[[21  3]
+ [ 4  9]]
+RNA_graph2vec_400e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [ 9  4]]
+RNA_graph2vec_400e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[15  9]
+ [ 5  8]]
+RNA_graph2vec_400e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [ 8  5]]
+RNA_graph2vec_400e_3WL_256dim_full test confussion matrix for SVC
+[[19  5]
+ [10  3]]
+RNA_graph2vec_400e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [10  3]]
+RNA_graph2vec_400e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_400e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 8  5]]
+RNA_graph2vec_400e_2WL_512dim_full test confussion matrix for SVC
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_400e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [10  3]]
+RNA_graph2vec_400e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[15  9]
+ [ 7  6]]
+RNA_graph2vec_400e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[22  2]
+ [12  1]]
+RNA_graph2vec_400e_3WL_512dim_full test confussion matrix for SVC
+[[21  3]
+ [12  1]]
+RNA_graph2vec_400e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [12  1]]
+RNA_graph2vec_400e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[21  3]
+ [ 9  4]]
+RNA_graph2vec_500e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[16  8]
+ [ 6  7]]
+RNA_graph2vec_500e_2WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [12  1]]
+RNA_graph2vec_500e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [11  2]]
+RNA_graph2vec_500e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 6  7]]
+RNA_graph2vec_500e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 8  5]]
+RNA_graph2vec_500e_3WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [12  1]]
+RNA_graph2vec_500e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [10  3]]
+RNA_graph2vec_500e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 7  6]]
+RNA_graph2vec_500e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_500e_2WL_256dim_full test confussion matrix for SVC
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_500e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [ 9  4]]
+RNA_graph2vec_500e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 8  5]]
+RNA_graph2vec_500e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[15  9]
+ [ 6  7]]
+RNA_graph2vec_500e_3WL_256dim_full test confussion matrix for SVC
+[[22  2]
+ [11  2]]
+RNA_graph2vec_500e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[19  5]
+ [12  1]]
+RNA_graph2vec_500e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[14 10]
+ [ 6  7]]
+RNA_graph2vec_500e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [ 7  6]]
+RNA_graph2vec_500e_2WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_500e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [11  2]]
+RNA_graph2vec_500e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 8  5]]
+RNA_graph2vec_500e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [12  1]]
+RNA_graph2vec_500e_3WL_512dim_full test confussion matrix for SVC
+[[20  4]
+ [11  2]]
+RNA_graph2vec_500e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [12  1]]
+RNA_graph2vec_500e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[20  4]
+ [11  2]]
+RNA_graph2vec_600e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 7  6]]
+RNA_graph2vec_600e_2WL_128dim_full test confussion matrix for SVC
+[[18  6]
+ [10  3]]
+RNA_graph2vec_600e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[18  6]
+ [12  1]]
+RNA_graph2vec_600e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 8  5]]
+RNA_graph2vec_600e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 7  6]]
+RNA_graph2vec_600e_3WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_600e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[24  0]
+ [11  2]]
+RNA_graph2vec_600e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 8  5]]
+RNA_graph2vec_600e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [11  2]]
+RNA_graph2vec_600e_2WL_256dim_full test confussion matrix for SVC
+[[19  5]
+ [ 7  6]]
+RNA_graph2vec_600e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[19  5]
+ [10  3]]
+RNA_graph2vec_600e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_600e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [11  2]]
+RNA_graph2vec_600e_3WL_256dim_full test confussion matrix for SVC
+[[13 11]
+ [ 9  4]]
+RNA_graph2vec_600e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [ 8  5]]
+RNA_graph2vec_600e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[18  6]
+ [ 8  5]]
+RNA_graph2vec_600e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [12  1]]
+RNA_graph2vec_600e_2WL_512dim_full test confussion matrix for SVC
+[[22  2]
+ [13  0]]
+RNA_graph2vec_600e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [11  2]]
+RNA_graph2vec_600e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_600e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 8  5]]
+RNA_graph2vec_600e_3WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [11  2]]
+RNA_graph2vec_600e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [12  1]]
+RNA_graph2vec_600e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 8  5]]
+RNA_graph2vec_700e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 7  6]]
+RNA_graph2vec_700e_2WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_700e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[24  0]
+ [11  2]]
+RNA_graph2vec_700e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 8  5]]
+RNA_graph2vec_700e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [10  3]]
+RNA_graph2vec_700e_3WL_128dim_full test confussion matrix for SVC
+[[22  2]
+ [11  2]]
+RNA_graph2vec_700e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[19  5]
+ [11  2]]
+RNA_graph2vec_700e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[18  6]
+ [ 8  5]]
+RNA_graph2vec_700e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [ 9  4]]
+RNA_graph2vec_700e_2WL_256dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_700e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [12  1]]
+RNA_graph2vec_700e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_700e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_700e_3WL_256dim_full test confussion matrix for SVC
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_700e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [12  1]]
+RNA_graph2vec_700e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 8  5]]
+RNA_graph2vec_700e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[22  2]
+ [ 7  6]]
+RNA_graph2vec_700e_2WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_700e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [12  1]]
+RNA_graph2vec_700e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 6  7]]
+RNA_graph2vec_700e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [ 9  4]]
+RNA_graph2vec_700e_3WL_512dim_full test confussion matrix for SVC
+[[21  3]
+ [ 8  5]]
+RNA_graph2vec_700e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [11  2]]
+RNA_graph2vec_700e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 6  7]]
+RNA_graph2vec_900e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 7  6]]
+RNA_graph2vec_900e_2WL_128dim_full test confussion matrix for SVC
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_900e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[15  9]
+ [ 9  4]]
+RNA_graph2vec_900e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [10  3]]
+RNA_graph2vec_900e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 7  6]]
+RNA_graph2vec_900e_3WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_900e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [10  3]]
+RNA_graph2vec_900e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 5  8]]
+RNA_graph2vec_900e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [10  3]]
+RNA_graph2vec_900e_2WL_256dim_full test confussion matrix for SVC
+[[19  5]
+ [11  2]]
+RNA_graph2vec_900e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [10  3]]
+RNA_graph2vec_900e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[18  6]
+ [ 9  4]]
+RNA_graph2vec_900e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[22  2]
+ [ 7  6]]
+RNA_graph2vec_900e_3WL_256dim_full test confussion matrix for SVC
+[[24  0]
+ [ 9  4]]
+RNA_graph2vec_900e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [11  2]]
+RNA_graph2vec_900e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[21  3]
+ [ 7  6]]
+RNA_graph2vec_900e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 8  5]]
+RNA_graph2vec_900e_2WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [11  2]]
+RNA_graph2vec_900e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[24  0]
+ [13  0]]
+RNA_graph2vec_900e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [10  3]]
+RNA_graph2vec_900e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 7  6]]
+RNA_graph2vec_900e_3WL_512dim_full test confussion matrix for SVC
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_900e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[17  7]
+ [11  2]]
+RNA_graph2vec_900e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_1000e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_1000e_2WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_1000e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [12  1]]
+RNA_graph2vec_1000e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 8  5]]
+RNA_graph2vec_1000e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[15  9]
+ [ 7  6]]
+RNA_graph2vec_1000e_3WL_128dim_full test confussion matrix for SVC
+[[20  4]
+ [11  2]]
+RNA_graph2vec_1000e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_1000e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[12 12]
+ [ 4  9]]
+RNA_graph2vec_1000e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [10  3]]
+RNA_graph2vec_1000e_2WL_256dim_full test confussion matrix for SVC
+[[21  3]
+ [11  2]]
+RNA_graph2vec_1000e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [11  2]]
+RNA_graph2vec_1000e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [10  3]]
+RNA_graph2vec_1000e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[14 10]
+ [ 8  5]]
+RNA_graph2vec_1000e_3WL_256dim_full test confussion matrix for SVC
+[[15  9]
+ [ 6  7]]
+RNA_graph2vec_1000e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[18  6]
+ [10  3]]
+RNA_graph2vec_1000e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[14 10]
+ [ 9  4]]
+RNA_graph2vec_1000e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 6  7]]
+RNA_graph2vec_1000e_2WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [12  1]]
+RNA_graph2vec_1000e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [12  1]]
+RNA_graph2vec_1000e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 5  8]]
+RNA_graph2vec_1000e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [ 6  7]]
+RNA_graph2vec_1000e_3WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [11  2]]
+RNA_graph2vec_1000e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[20  4]
+ [12  1]]
+RNA_graph2vec_1000e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[20  4]
+ [ 5  8]]
+RNA_graph2vec_1200e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[16  8]
+ [ 7  6]]
+RNA_graph2vec_1200e_2WL_128dim_full test confussion matrix for SVC
+[[22  2]
+ [ 8  5]]
+RNA_graph2vec_1200e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [12  1]]
+RNA_graph2vec_1200e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [10  3]]
+RNA_graph2vec_1200e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_1200e_3WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_1200e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [11  2]]
+RNA_graph2vec_1200e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [10  3]]
+RNA_graph2vec_1200e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[21  3]
+ [ 6  7]]
+RNA_graph2vec_1200e_2WL_256dim_full test confussion matrix for SVC
+[[22  2]
+ [10  3]]
+RNA_graph2vec_1200e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [11  2]]
+RNA_graph2vec_1200e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 8  5]]
+RNA_graph2vec_1200e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 8  5]]
+RNA_graph2vec_1200e_3WL_256dim_full test confussion matrix for SVC
+[[19  5]
+ [10  3]]
+RNA_graph2vec_1200e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[21  3]
+ [10  3]]
+RNA_graph2vec_1200e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 7  6]]
+RNA_graph2vec_1200e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[24  0]
+ [ 8  5]]
+RNA_graph2vec_1200e_2WL_512dim_full test confussion matrix for SVC
+[[24  0]
+ [13  0]]
+RNA_graph2vec_1200e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [11  2]]
+RNA_graph2vec_1200e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 4  9]]
+RNA_graph2vec_1200e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[17  7]
+ [ 9  4]]
+RNA_graph2vec_1200e_3WL_512dim_full test confussion matrix for SVC
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_1200e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [12  1]]
+RNA_graph2vec_1200e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[21  3]
+ [ 7  6]]
+RNA_graph2vec_1400e_2WL_128dim_full test confussion matrix for LogisticRegression
+[[20  4]
+ [ 8  5]]
+RNA_graph2vec_1400e_2WL_128dim_full test confussion matrix for SVC
+[[21  3]
+ [11  2]]
+RNA_graph2vec_1400e_2WL_128dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [12  1]]
+RNA_graph2vec_1400e_2WL_128dim_full test confussion matrix for MLPClassifier
+[[16  8]
+ [ 7  6]]
+RNA_graph2vec_1400e_3WL_128dim_full test confussion matrix for LogisticRegression
+[[18  6]
+ [ 8  5]]
+RNA_graph2vec_1400e_3WL_128dim_full test confussion matrix for SVC
+[[24  0]
+ [12  1]]
+RNA_graph2vec_1400e_3WL_128dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [13  0]]
+RNA_graph2vec_1400e_3WL_128dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 7  6]]
+RNA_graph2vec_1400e_2WL_256dim_full test confussion matrix for LogisticRegression
+[[23  1]
+ [12  1]]
+RNA_graph2vec_1400e_2WL_256dim_full test confussion matrix for SVC
+[[22  2]
+ [13  0]]
+RNA_graph2vec_1400e_2WL_256dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [10  3]]
+RNA_graph2vec_1400e_2WL_256dim_full test confussion matrix for MLPClassifier
+[[20  4]
+ [10  3]]
+RNA_graph2vec_1400e_3WL_256dim_full test confussion matrix for LogisticRegression
+[[17  7]
+ [ 8  5]]
+RNA_graph2vec_1400e_3WL_256dim_full test confussion matrix for SVC
+[[19  5]
+ [ 9  4]]
+RNA_graph2vec_1400e_3WL_256dim_full test confussion matrix for RandomForestClassifier
+[[19  5]
+ [11  2]]
+RNA_graph2vec_1400e_3WL_256dim_full test confussion matrix for MLPClassifier
+[[17  7]
+ [ 8  5]]
+RNA_graph2vec_1400e_2WL_512dim_full test confussion matrix for LogisticRegression
+[[23  1]
+ [13  0]]
+RNA_graph2vec_1400e_2WL_512dim_full test confussion matrix for SVC
+[[18  6]
+ [11  2]]
+RNA_graph2vec_1400e_2WL_512dim_full test confussion matrix for RandomForestClassifier
+[[22  2]
+ [10  3]]
+RNA_graph2vec_1400e_2WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [11  2]]
+RNA_graph2vec_1400e_3WL_512dim_full test confussion matrix for LogisticRegression
+[[19  5]
+ [ 8  5]]
+RNA_graph2vec_1400e_3WL_512dim_full test confussion matrix for SVC
+[[20  4]
+ [ 9  4]]
+RNA_graph2vec_1400e_3WL_512dim_full test confussion matrix for RandomForestClassifier
+[[23  1]
+ [10  3]]
+RNA_graph2vec_1400e_3WL_512dim_full test confussion matrix for MLPClassifier
+[[19  5]
+ [ 9  4]]
