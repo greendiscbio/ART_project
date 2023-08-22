@@ -27,9 +27,10 @@ comparation = []
 for item in disgenet_genes:
   if item in rna_total_genes: #and item in biogrid_genes:
     comparation.append(item)
-
+    
+print(len(comparation))
 print('Disgenet included genes: '+ str(len(comparation)))
-with open("2023 Work/Graph networks/Spectral_clustering/Data/Patients Disgenet/disgenet_included_genes.txt", 'w') as file:
+with open("2023 Work/Graph networks/Spectral_clustering/Data/Patients Disgenet/disgenet_found_genes_in_rna_total.txt", 'w') as file:
     for c in comparation:
         file.write(c+'\n')
 
