@@ -9,6 +9,8 @@ The penalties that these autoencoders can use are:
 * variational: fits a particular distribution to make the model generative
 * penalty combinations: we combined denoising and sparse to benefit from the advantages they both bring
 
+These latent representations obtained by the autoencoders are then used as input in a COX PH model combined with Breslow's estimator to predict the PFS, as well as the risk (Area under ROC) of the patients.
+
 Moreover, we added interpretability by finding the Mutual Information between the original transcriptomic data and the latent representations. The genes that were most expressed
 in the representations were LRP2 and ACE2, among a few others.
 
